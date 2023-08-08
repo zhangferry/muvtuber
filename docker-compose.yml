@@ -34,7 +34,7 @@ services:
       #
       ## API_URL 是类 ChatGPT 接口的地址，默认是 openai 官方接口。
       ## 可以替换成任何其他兼容的、或代理的接口。
-      - API_URL=https://api.openai.com/v1/chat/completions
+      - API_URL=https://oa.api2d.net/v1/chat/completions
     restart: unless-stopped
   musharing_chatbot:
     image: murchinroom/musharing_chatbot:v0.0.3
@@ -61,7 +61,7 @@ services:
       - "51070:80"
     restart: unless-stopped
   externalsayer:
-    image: murchinroom/externalsayer:v0.0.4
+    image: docker.io/ferry/externalsayer:v0.0.4_alpha #murchinroom/externalsayer:v0.0.4
     build: ./externalsayer/
     ports:
       - "51065:50010"

@@ -1,5 +1,5 @@
 SrvAddr: "0.0.0.0:50010"
-EnabledSayer: "azure"
+EnabledSayer: "xunfei"
 AzureSayer:
   SpeechKey: "your-key"
   SpeechRegion: "eastus"
@@ -7,3 +7,7 @@ AzureSayer:
   FormatMimeSubtype: "mp3"
   Roles:
     "default": '<speak version="1.0" xml:lang="zh-CN"><voice name="zh-CN-XiaoxiaoNeural">{{.}}</voice></speak>'
+XunfeiSayer:
+  ApiKey: "your-key"
+  ApiSecret: "your-Secret"
+  AppId: "you-appId"
